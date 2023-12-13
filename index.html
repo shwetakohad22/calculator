@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="border">
+        <div class="calculator">
+          <h1 id="title">Calculator</h1>
+          <p id="description">
+            I have made this calculator using HTML CSS & JS
+          </p>
+          <form id="calculatorForm">
+            <div class="display">
+              <input type="text" name="display" id="result" />
+            </div>
+            <div>
+              <button type="button" id="clear" onclick="clearDisplay()">
+                C
+              </button>
+              <button type="button" onclick="deleteLastEl()">DE</button>
+              <button type="button" onclick="appendChar('.')">.</button>
+              <button type="button" id="multiply" onclick="appendChar('*')">
+                *
+              </button>
+            </div>
+            <div>
+              <button id="7" type="button" onclick="appendChar('7')">7</button>
+              <button id="8" type="button" onclick="appendChar('8')">8</button>
+              <button id="9" type="button" onclick="appendChar('9')">9</button>
+              <button type="button" id="devide" onclick="appendChar('/')">
+                /
+              </button>
+            </div>
+            <div>
+              <button id="4" type="button" onclick="appendChar('4')">4</button>
+              <button id="5" type="button" onclick="appendChar('5')">5</button>
+              <button id="6" type="button" onclick="appendChar('6')">6</button>
+              <button type="button" id="subtract" onclick="appendChar('-')">
+                -
+              </button>
+            </div>
+            <div>
+              <button id="1" type="button" onclick="appendChar('1')">1</button>
+              <button id="2" type="button" onclick="appendChar('2')">2</button>
+              <button id="3" type="button" onclick="appendChar('3')">3</button>
+              <button type="button" id="add" onclick="appendChar('+')">
+                +
+              </button>
+            </div>
+            <div>
+              <button id="0" type="button" onclick="appendChar('0')">0</button>
+              <button id="00" type="button" onclick="appendChar('00')">
+                00
+              </button>
+              <button type="button" id="equal" onclick="calculate()">=</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  </body>
+</html>
